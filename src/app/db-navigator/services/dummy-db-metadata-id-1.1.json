@@ -1,0 +1,18 @@
+{
+  "data": [
+    {
+      "id": "1.1.1",
+      "parentId": "1",
+      "text": "Schema1",
+      "type": "Schema",
+      "children": false
+    },
+    {
+      "id": "1.1.2",
+      "parentId": "1",
+      "text": "Schema2",
+      "type": "Schema",
+      "children": true
+    }
+  ]
+}

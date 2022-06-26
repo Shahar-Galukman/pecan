@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "id": "1.1.1.1.1",
+      "text": "Column1",
+      "type": "Column",
+      "children": false
+    },
+    {
+      "id": "1.1.1.1.1",
+      "text": "Column2",
+      "type": "Column",
+      "children":  false
+    },
+    {
+      "id": "1.1.1.1.1",
+      "text": "Column3",
+      "type": "Column",
+      "children":  false
+    },
+    {
+      "id": "1.1.1.1.1",
+      "text": "Column4",
+      "type": "Column",
+      "children":  false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+<ul *ngIf="items">
+    <li *ngFor="let dataItem of items; trackBy: trackByItem">
+        <app-item [text]="dataItem.text"
+                  [type]="dataItem.type"
+                  [hasChildren]="dataItem.children"
+                  (clicked$)="onClick(dataItem)"></app-item>
+        <app-navigator
+                *ngIf="dataItem.children"
+                [items]="dbMetaDataChildren$ | async"></app-navigator>
+    </li>
+</ul>

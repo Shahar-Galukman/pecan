@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DbMetadataService } from "./db-navigator/services/db-metadata.service";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pecan-test';
+
+  public dbMetaData$ = this.dbMetadataService.getDBMetadata();
+
+  constructor(private dbMetadataService: DbMetadataService) {
+  }
 }

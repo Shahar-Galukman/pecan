@@ -1,0 +1,55 @@
+:host {
+  span {
+    display: block;
+    width: fit-content;
+
+    &.clickable:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    &::before {
+      content: '';
+      display: inline-block;
+      margin-right: 5px;
+      width: 16px;
+      height: 16px;
+    }
+
+    &.Connection {
+      &::before {
+        background: url("^assets/navigator/connection.svg") no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &.Database {
+      &::before {
+        background: url("^assets/navigator/database.svg") no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &.Schema {
+      &::before {
+        background: url("^assets/navigator/schema.svg") no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &.Table {
+      &::before {
+        background: url("^assets/navigator/table.svg") no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &.Column {
+      &::before {
+        background: url("^assets/navigator/column.svg") no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+}
